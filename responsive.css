@@ -1,0 +1,168 @@
+/* General Responsive Styles */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+        padding: 0 20px;
+    }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /* Navigation */
+    .nav-container {
+        padding: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        margin-top: 15px;
+        display: none; /* Will be shown via JavaScript toggle */
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none; /* Will be controlled by JavaScript */
+    }
+
+    /* Add hamburger menu */
+    .menu-toggle {
+        display: block;
+        order: 2;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .hero-content, .hero-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    /* Features Section */
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Impact Section */
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .impact-metrics-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .metric {
+        margin: 10px 0;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    /* Team Section */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Partners Section */
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mission Section */
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Impact Section */
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Calculator Form */
+    .calculator-form {
+        padding: 15px;
+    }
+
+    .impact-metrics {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .metric {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 20px 0;
+    }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cta-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
