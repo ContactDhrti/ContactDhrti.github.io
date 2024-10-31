@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Impact - Dhrti</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <a href="/" class="logo">
+            <img src="Logo.jpg" alt="Dhrti - From Plastic to Purpose">
+        </a>
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="about.html">About Us</a>
+                <ul class="dropdown-menu">
+                    <li><a href="about.html#mission">Our Mission</a></li>
+                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="about.html#partners">Our Partners</a></li>
+                </ul>
+            </li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="suppliers.html">For Suppliers</a></li>
+            <li><a href="buyers.html">For Buyers</a></li>
+            <li><a href="impact.html" class="active">Impact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cta-buttons">
+            <a href="/login" class="login">Login</a>
+            <a href="/get-started" class="get-started">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="impact-tracker">
+                <div class="impact-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="24" fill="#E8F5E9"/>
+                        <path d="M24 12l12 12-12 12-12-12 12-12z" stroke="#00c853" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h2>Track Your Impact</h2>
+                
+                <div class="impact-calculator-card">
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label for="plastic-weight">Enter Plastic Weight (kg)</label>
+                            <input type="number" id="plastic-weight" class="form-control" min="0" step="0.1">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="plastic-type">Type of Plastic</label>
+                            <select id="plastic-type" class="form-control">
+                                <option value="">Select plastic type</option>
+                                <option value="PVC">PVC (Pipes)</option>
+                                <option value="PET">PET (Water Bottles)</option>
+                                <option value="HDPE">HDPE (Milk Jugs)</option>
+                                <option value="LDPE">LDPE (Plastic Bags)</option>
+                                <option value="PP">PP (Bottle Caps)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@dhrti.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dhrti. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/responsive.js"></script>
+</body>
+</html>
